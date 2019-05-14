@@ -1,7 +1,8 @@
 const http = require('http');
 
 const server = http.createServer((request, response) => {
-    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.writeHead(200, { "Content-Type": "text/plain" });
+    response.write("First string");
     response.end("Hello Alex! Now with Docker!");
 });
 
